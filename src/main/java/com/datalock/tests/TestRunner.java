@@ -62,7 +62,7 @@ public class TestRunner implements CommandLineRunner {
 
         Usuario u = Usuario.builder()
                 .id(usuarioId)
-                .items(List.of(Item.builder().itemId(itemId).build()))
+                .items(List.of(Item.builder().itemId("other").build()))
                 .build();
         repo.save(u);
 
