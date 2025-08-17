@@ -113,6 +113,8 @@ Usuario(
 ```
 ✅ Resultado correto: ambas atualizações foram mergeadas e persistidas sem perda de dados.
 
+💡 A validação do if-else garante que MS3 só atualize um item existente e, combinada com retry/backoff, resolve problemas de race conditional.
+
 ## Conclusão
 
 A combinação de **Optimistic Locking + retry/backoff + DLQ + métricas** garante:
